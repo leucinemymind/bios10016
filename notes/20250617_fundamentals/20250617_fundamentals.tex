@@ -27,7 +27,7 @@
 
 \usepackage[version=4]{mhchem}
 
-\title{Fundamentals}
+\title{Biochemistry fundamentals}
 \author{BIOS 1006}
 \date{17 June 2025}
 
@@ -61,10 +61,13 @@
 \section*{Definitions}
 
 \begin{description}
+\item [dipole moment ($\mu$)] separation of charges due to differences in electronegativity
 \item [electrostatic] involves charges
 \item [functional groups] specific groups of atoms within molecules that are responsible for the molecule's characteristic chemical reactions
+\item [hydrophobic] ``water hating''
 \item [solute] in a solution, dissolved in a solvent
 \item [solvent] in a solution, dissolves the solute
+\item [van der Waals distance/radius] the distance where the attractive and repulsive forces between two nonbonded atoms are equal
 \item [weak interactions] weaker, transient interactions that are additive and can become stronger
 \end{description}
 
@@ -174,6 +177,8 @@ Memorize!
 \subsection*{Properties of hydrogen bonds}
 
 \begin{itemize}
+\item \textbf{Oxygen}, \textbf{nitrogen}, and \textbf{fluorine} can form hydrogen bonds (very electronegative)
+\item Require a donor (has H attached) and acceptor (has free lone pair)
 \item Hydrogen bonds in between casual interaction and covalent interaction in terms of proximity
 \item Both covalent and electrostatic properties
 \item Collinear orientation (present in a straight line)
@@ -181,6 +186,7 @@ Memorize!
 \item Electrostatic interaction
 \item Atoms involved share electrons
 \item In liquid water, 3.4 neighbors on average (4 in ice)
+\item Hydrogen bonds can be disrupted by water
 \end{itemize}
 
 \subsection*{Weak interactions}
@@ -209,10 +215,12 @@ Strongest to weakest
 \item Int\textbf{er}molecular forces (IMFs)
 \begin{itemize}
 \item Ionic interactions and salt bridges
-\item Van der Waals forces
+\item Van der Waals forces:
+\begin{itemize}
 \item Hydrogen bonds
 \item Dipole-dipole interactions
 \item London dispersion forces (LDFs)
+\end{itemize}
 \end{itemize}
 \end{itemize}
 
@@ -231,5 +239,124 @@ Strongest to weakest
 \item Water is good at breaking ionic bonds
 \item \textbf{Hydration shells} prevent ionic bonds from reforming
 \end{itemize}
+
+\subsubsection*{Dipole interactions}
+
+\begin{itemize}
+\item Occur between molecules that have or can adopt a \textbf{dipole moment} ($\mu$)
+\item Three types
+\begin{itemize}
+\item \textbf{Dipole-dipole interactions} (fixed dipoles)
+\item \textbf{Dipole-induced dipole interactions} (fixed dipole and nonpolar)
+\item \textbf{Induced dipole-induced dipole interactions (London Dispersion)} (nonpolar and nonpolar)
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{LDFS: a type of van der Waals interaction between non-polar molecules}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{ldfs}
+\end{figure}
+
+Electrons are constantly moving creating transient dipoles in nonpolar molecules
+
+\subsection*{Lennard-Jones plot}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{lennardjones}
+\end{figure}
+
+Atoms come together until they reach the \textbf{van der Waals distance/radius} at which point they begin to repel each other
+
+\subsection*{Hydrophobic molecules}
+
+\begin{itemize}
+\item Oil and water do not mix - oil is hydrophobic
+\item Hydration shells will still form, but they are not stabilized
+\item The separation of water and hydrophobic molecules is driven by the \textbf{hydrophobic effect}
+\item Favorable because there is an increase in \textbf{entropy}
+\item Second law of thermo: All spontaneous processes result in an overall increase of entropy in the universe ($\Delta S_\text{universe} >$ 0)
+\item Nonpolar-nonpolar - shell of hydration, but less water that forms the shell. More water ends up in the system, increasing water entropy and increasing overall entropy (energetically favorable)
+\item The overall entropy increases when only one cage is formed
+\item Hydrophobic effect drives the folding of proteins
+\item \textbf{Hydrophobic R-groups} are \textbf{forced into the core}; \textbf{hydrophilic R-groups form a shell} around the hydrophobic core. \textbf{Van der Waals forces organize amino acids} in the core
+\item Molecules with hydrophilic and hydrophobic ``sides'' (example: phospholipids) forming micelles and bilayers
+\end{itemize}
+
+\subsection*{Hydrophobic effect vs. van der Waals}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{hydrophobicvsvdw}
+\end{figure}
+
+\subsection*{pH}
+
+\begin{itemize}
+\item Hydrogen ions (H$^+$, ``protons'') can be gained or lost by some functional groups changing the properties of functional groups
+\item pH is tightly regulated by the body at 7.4
+\item A change greater than 0.5 pH units can lead to coma or death
+\end{itemize}
+
+A small amount of water ionizes: $$2 \ce{H2O}_{(l)} \rightleftharpoons  \ce{H3O+}_{(aq)} + \ce{OH-}_{(aq)}$$
+
+For simplicity: $$\ce{H2O}_{(l)} \rightleftharpoons \ce{H+}_{(aq)} + \ce{OH-}_{(aq)}$$
+
+\subsubsection*{Dissociation constant formula}
+
+\begin{equation}
+K_w = [\ce{H+}][\ce{OH-}]
+\end{equation}
+
+\subsubsection*{Calculation of pH and pOH}
+
+\begin{equation}
+\mathrm{pH} = -\log [\ce{H+}]
+\end{equation}
+
+\begin{equation}
+\mathrm{pOH} = -\log [\ce{OH-}]
+\end{equation}
+
+\subsection*{Acids and bases}
+
+\begin{itemize}
+\item \textbf{Brønsted acids} are \ce{H+} donors
+\item \textbf{Brønsted bases} are \ce{H+} acceptors
+\item A \textbf{strong acid} or \textbf{strong base} is \textbf{completely ionized} in water ($A + B \to C + D$)
+\item \textbf{Weak acids} are \textbf{incompletely ionized} in aqueous solutions ($A + B \rightleftharpoons C + D$)
+\item Charges depend on the functional group
+\item Acid becomes conjugate base; base becomes conjugate acid
+\item Weak acid and its conjugate bases reach equilibrium in solution
+\end{itemize}
+
+\subsubsection*{Acid dissociation formula}
+
+ \begin{equation}
+K_a = \frac{[\ce{H+}][\text{conjugate base}]}{[\text{weak acid]}}
+\end{equation}
+
+Larger $K_a$ (dissociation constant) = stronger acid
+
+\subsubsection*{ICE table (for weak acids only)}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{cccc}
+Initial & 100 mmol & 0 & 0 \\
+Change & -X & +X & +X \\
+End & 100 mmol - X & +X & +X \\
+\end{tabular}
+\end{table}
+
+\subsubsection*{Le Châtelier's Principle}
+
+The degree to which a weak acid is dissociated depends on the pH of the system
+
+\begin{equation}
+K_a = \frac{[\ce{H+}] [\ce{A-}]} {[\ce{HA}]}
+\end{equation}
 
 \end{document}
