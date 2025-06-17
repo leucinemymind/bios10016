@@ -1,0 +1,18 @@
+[{
+ "name": "LAB2PROTEIN",
+ "modelSeeds": [
+  "1105945219"
+ ],
+ "sequences": [
+  {
+   "proteinChain": {
+    "sequence": "MAALEKKALEEKKALEEK",
+    "count": 1,
+    "useStructureTemplate": true
+   }
+  }
+ ],
+ "dialect": "alphafoldserver",
+ "version": 1
+}
+]
