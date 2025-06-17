@@ -7,8 +7,8 @@ absorbance <- c(0, 0.099, 0.263, 0.407, 0.504, 0.684)
 
 # plot
 plot(protein_concentration_ul, absorbance, col = "blue", pch = 19,
-     xlab = "Protein Mass (µg)", ylab = "Absorbance",
-     main = "Protein mass vs absorbance")
+     xlab = "Protein mass (µg)", ylab = "Absorbance",
+     main = "Absorbance vs protein mass",)
 
 # linear regression
 
