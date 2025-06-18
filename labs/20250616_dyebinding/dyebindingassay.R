@@ -1,6 +1,3 @@
-# pkgs
-library(stats)
-
 # x and y axes
 protein_mass_ul <- c(0,10,20,30,40,60)
 absorbance <- c(0, 0.099, 0.263, 0.407, 0.504, 0.684)
@@ -30,8 +27,6 @@ interpolate_protein_mass <- function(absorbance_value) {
   return(protein_mass)
 }
 
-# values
-
-interpolate_protein_mass(0.309) #mass = 25.21 micrograms
-interpolate_protein_mass(0.440) #mass = 36.33 micrograms
-interpolate_protein_mass(0.433) # mass = 35.74 micrograms
+# > interpolate_protein_mass(0.309) 
+# > interpolate_protein_mass(0.440)
+# > interpolate_protein_mass(0.433)
