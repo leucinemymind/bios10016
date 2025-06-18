@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt]{article}
+\documentclass[letterpaper, 12pt]{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{textcomp}
 \usepackage{fullpage}
@@ -9,7 +9,6 @@
 \usepackage{biblatex}
 \geometry{margin=1in}
 \usepackage{enumitem}
-\usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{gensymb}
 \usepackage{parskip}
@@ -17,6 +16,9 @@
 \usepackage{caption}
 \usepackage{cancel}
 \usepackage{nicefrac}
+
+
+\usepackage{hyperref}
 \hypersetup{
     colorlinks=true,        % Enable colored links
     linkcolor=teal,         % Set color for internal links
@@ -39,18 +41,75 @@
 
 \begin{itemize}
 \item Know all definitions.
-\item Know the basic atoms that comprise biological systems. (CHNOPS)
+\item Know the basic atoms that comprise biological systems. 
+\begin{itemize}
+\item CHNOPS (carbon, hydrogen, nitrogen, oxygen, phosphorus, sulphur)
+\end{itemize}
 \item Describe why carbon is ideal for forming the skeleton of biomolecules.
+\begin{itemize}
+\item Carbon is flexible
+\item Can form 4 covalent bonds
+\item Carbon can form single, double, and triple bonds
+\item Forms chains, branched chains, and rings
+\end{itemize}
 \item Name and draw the common functional groups found in biomolecules.
+\begin{itemize}
+\item Hydroxyl \ce{-OH} (alcohol)
+\item Carbonyl \ce{C=O} (ketone \ce{C=O} (carbonyl in the middle) vs aldehyde \ce{-CHO})
+\item Carboxyl \ce{-COOH} (acids)
+\item Amino \ce{-NH2} (amine)
+\item Amido \ce{-C(=O)NH2} (amide)
+\item Sulfhydryl \ce{-SH} (thiol)
+\item Phosphate \ce{-PO4^3-} (phosphate)
+\item Ester \ce{-COOR} (ester)
+\end{itemize}
 \item Recognize different molecular representations and draw abbreviated and expanded structural formulae.
 \item Describe the four basic building that comprise biological systems, their different sub-classifications, and the four major classes of biomolecules that they form. Identify to which class of the four basic building blocks a small molecule belongs or is related.
-\item Describe the properties of water that make it an ideal solute for life.
+\begin{itemize}
+\item Amino acids $\to$ polypeptides (proteins)
+\item Lipids (fatty acids) $\to$ triglycerides, phospholipids, steroids, membranes
+\item Carbohydrates (sugars) $\to$ polysaccharides
+\item Nucleotides $\to$ nucleic acids (DNA, RNA)
+\end{itemize}
+\item Describe the properties of water that make it an ideal solvent for life.
+\begin{itemize}
+\item Polarity
+\item High heat of vaporization
+\item Hydrogen bonding
+\item Cohesion and adhesion
+\item Less dense as a solid
+\item High specific heat
+\item Neutral pH
+\end{itemize}
 \item Describe the properties of hydrogen bonds and what is required for them to be formed.
+\begin{itemize}
+\item Strongest van der Waals interaction
+\item Collinear orientation
+\item Electrostatic interaction
+\item Individually weak but collectively strong
+\item Dynamic
+\item Requires a donor (N-H, O-H, F-H) and acceptor (has free lone pair)
+\end{itemize}
 \item Describe the three types of “weak” interactions, the types of groups that participate in these interactions and the role they play in solvation and biomolecular structure.
+\begin{itemize}
+\item Three types of weak interactions: \textbf{hydrogen bonds, dipole-dipole interactions, London dispersion forces (LDFs)}
+\item Hydrogen bonds: occur when a hydrogen atom covalently bonded to an electronegative atom (N-H, O-H, F-H) interacts with another electronegative atom bearing a lone pair of electrons. Water forms extensive hydrogen bonds with polar solutes, aiding in their dissolution. In biomolecular structure, H-bonds stabilize protein secondary structures (alpha helices and beta sheets) and DNA base pairing.
+\item Dip-dip interactions: occur between fully charged ions or between ionized groups of opposite charge. Water stabilizes ions by surrounding them with its polar molecules (ion-dipole interaction), helping salts dissolve. Salt bridges in proteins help stabilize tertiary and quaternary structures.
+\item LDFs (induced dipole-induced dipole): weak, transient interactions arising from induced dipoles between closely packed nonpolar atoms or molecules. Poorly solvated in water and are not very stable.
+\end{itemize}
 \item Describe Lennard-Jones plots and use them to describe and predict interactions between molecules.
+\begin{itemize}
+\item When molecules are far apart (large radius), there is no interaction
+\item As they approach each other, attraction appears. The most stable configuration is at the equilibrium point.
+\item When molecules are too close together and reach past the van der Waals radius, repulsion occurs. Molecules are unstable.
+\end{itemize}
 \item Describe the hydrophobic effect and van der Waals interactions and describe their different roles in biomolecular structure.
+\begin{itemize}
+\item The hydrophobic effect is the tendency of nonpolar molecules to aggregate in aqueous solutions to minimize their exposure to water. This is driven by an increase in entropy of the water molecules surrounding the hydrophobic groups.
+\item Van der Waals interactions are weak, transient interactions that occur between nonpolar molecules. They are additive and become stronger when many of them are present.
+\end{itemize}
 \item Describe the properties and principles of buffers and buffering capacity.
-\item Calculate the pH from the concentration of \ce{H+} and vice versa.
+\item Calculate the pH from the concentration of \ce{H+} and vice versa. (See \ref{pH} for the formula.)
 \item Calculate the pH, pKa or the amounts of acid and conjugate base using the Henderson-Hasselbalch equation.
 \item Predict protonation state of a group based on it pKa and the buffer pH.
 \item Describe the physiologically important buffers.
@@ -59,6 +118,7 @@
 \newpage
 
 \section*{Definitions}
+\label{defs}
 
 \begin{description}
 \item [dipole moment ($\mu$)] separation of charges due to differences in electronegativity
@@ -312,7 +372,7 @@ K_w = [\ce{H+}][\ce{OH-}]
 
 \subsubsection*{Calculation of pH and pOH}
 
-\begin{equation}
+\begin{equation} \label{pH}
 \mathrm{pH} = -\log [\ce{H+}]
 \end{equation}
 
