@@ -95,6 +95,57 @@ End & 0.2-x & +x & +x \\
 
 \paragraph{Which amino acids have basic functional groups?} RHK
 
-\subsection*{pI of a peptide}
+\subsection*{pI}
+
+\subsubsection*{Question 5: Calculating pI of a peptide}
+
+A tripeptide formed from tyrosine, valine, and glycine, in the order as stated. Use the following pKa values: $\alpha$-COOH = 2.2, $\alpha$-\ce{NH3+} = 9.4, tyrosine side chain OH = 10.5.
+
+\begin{itemize}
+\item[(a)] Draw the tripeptide and clearly label where the N-terminus and C-terminus are at pH 7.
+
+$$ \text{(N-term)} \: \ce{NH3+ - Tyr - Val - Gly - COOH} \: \text{(C-term)} $$
+
+\item[(b)] Calculate the charge of this tripeptide at pH 7.
+
+Compare pKa and pH of each ionizable group:
+
+N-term pKa 9.4 $>$ pH 7 $\rightarrow$ protonated, charge = +1
+
+C-term pKa 2.2 $<$ pH 7 $\rightarrow$ deprotonated, charge = -1
+
+Tyrosine side chain pKa 10.5 $>$ pH 7 $\rightarrow$ protonated, charge = 0 (protonated form, -OH, carries neutral charge)
+
+\fbox{Overall charge: 0}
+
+\item[(c)] Calculate the pI of this tripeptide at pH 7.
+
+Order all the pKa values:
+
+C-term 2.2 \\
+N-term 9.4 \\
+Tyr 10.5 \\
+
+Always assume full protonation at the beginning (pH $<$ pKa). When the molecule is fully protonated, the overall charge is +1 (neutral C-terminus and tyrosine, positive N-terminus). As the pH increases, the C-term deprotonates first (pKa 2.2), then the N-term (pKa 9.4), and finally the side chain of tyrosine (pKa 10.5). The pI is the average of the two pKa values that surround the zero charge state.
+
++1 \\
+C-term 2.2 \\
+0 \\
+N-term 9.4 \\
+-1 \\
+Tyr 10.5 \\
+-2
+
+The flanking pKas at charge 0 are 2.2 and 9.4.
+
+$$ \frac{2.2 + 9.4}{2} = 5.8 $$
+
+The pKa at pH 7 of the peptide is \fbox{5.8}.
+
+\item[(d)] Will you be able to use UV light absorbance at 280 nm to detect your tripeptide? Why or why not?
+
+\fbox{Yes, because the tripeptide contains a tyrosine side chain}, which has a phenolic ring that absorbs UV light at 280 nm. The other two amino acids (valine and glycine) do not absorb UV light at this wavelength.
+
+\end{itemize}
 
 \end{document}
