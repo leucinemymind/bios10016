@@ -210,9 +210,26 @@ Amide or peptide bonds link amino acids together in proteins. (amine + carboxyl)
 
 N-terminus at the amino group and C-terminus at the carboxyl group
 
-pKa $>$ pH = positive, pH $<$ pKa = negative
+\subsection*{pH vs. pKa}
 
-\subsection*{Calculating pI}
+pKa is the dissociation constant of a weak acid, which is the pH at which half of the acid is dissociated. Half of it is in the protonated form (HA) and the other half is in the deprotonated form (A$^-$). 
+
+A higher Ka value indicates that an acid is stronger, and because the pKa is the negative logarithm of the Ka, a lower pKa value indicates a stronger acid.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Group Type} & \textbf{pH $<$ pKa} & \textbf{pH $>$ pKa} \\
+\hline
+\textbf{Acidic} (e.g. \ce{-COOH}, Asp, Glu) & Protonated (neutral) & Deprotonated (\textminus 1) \\
+\hline
+\textbf{Basic} (e.g. \ce{-NH3+}, Lys, Arg, His) & Protonated (+1) & Deprotonated (neutral) \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Calculating pI of a peptide}
 
 \begin{enumerate}
 \item What is the charge at neutrality?
@@ -221,13 +238,15 @@ pKa $>$ pH = positive, pH $<$ pKa = negative
 \item Calculate the average.
 \end{enumerate}
 
-Example: Find the pI of this peptide at pH=7:
+Example: Find the pI of this peptide at pH 7:
 
 $$\ce{+H3N}\text{-A-G-R-K-N-I-M-}\ce{COO-}$$
 
 A, G, N, I, M are not ionizable. R and K have a +1 charge. The two ends cancel out.
 
 To find the pI: determine when the net charge = 0.
+
+pH$>$pKa, so this is being deprotonated. However, we begin with assuming full protonation. COO$^-$ gains a proton to become COOH, so that makes the overall charge +3.
 
 Deprotonation occurs in this order (by pKa):
 
@@ -237,5 +256,17 @@ Deprotonation occurs in this order (by pKa):
 \item K side chain pKa 10.5
 \item R side chain pKa 12.5
 \end{enumerate}
+
+Now find where the charge is neutral:
+
+(3+) 2.2 (2+) 9.5 (1+) 10.5 (0) 12.5 (1-)
+
+The charge is neutral between 10.5 and 12.5. Take the average:
+
+$$ 10.5 + 12.5 = 23 $$
+
+$$\frac{23}{2} = 11.5$$
+
+The pI is \fbox{11.5}.
 
 \end{document}
