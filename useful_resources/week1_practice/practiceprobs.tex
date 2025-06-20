@@ -63,9 +63,9 @@ Answers:
 
 \subsection*{pH and pKa}
 
-\subsubsection*{Question 3: ICE tables}
+\subsubsection*{Question 3: ICE tables and Henderson-Hasselbalch equation}
 
-You make a 0.2 M aqueous solution of propionic acid \ce{CH3CH2COOH} by dissolving an appropriate amount of propionic acid in water. The pH of the resulting solution is 4.88. What is the Ka of propionic acid?
+You make a 0.2 M aqueous solution of propionic acid \ce{CH3CH2COOH} by dissolving an appropriate amount of propionic acid in water. The pH of the resulting solution is 4.88. What is the pKa of propionic acid?
 
 $$\ce{CH3COOH \rightleftharpoons CH3COO- + H+}$$
 
@@ -74,12 +74,30 @@ Set up the ICE table:
 \begin{table}[H]
 \centering
 \begin{tabular}{c|c|c|c}
-& \ce{CH3COOH} & \ce{CH3COO-} & \ce{H+} \\\hline
+& \ce{[CH3COOH]} & \ce{[CH3COO-]} & \ce{[H+]} \\\hline
 Initial & 0.2 & O & O \\
 Change & -x & +x & +x \\
 End & 0.2-x & +x & +x \\
 \end{tabular}
 \end{table}
+
+Given that the concentration of \ce{H+} is equal to x, we can undo the logarithm to find [\ce{H+}]:
+
+\begin{gather*}
+\text{pH} = -\log[\ce{H+}] \\
+4.88 = -\log[\ce{H+}] \\
+[\ce{H+}] = 1.32 \times 10^{-5} \: \text{M}
+\end{gather*}
+
+Now plug this into the Henderson-Hasselbalch equation:
+
+\begin{gather*}
+4.88 = pK_a + \log\left(\frac{1.32 \times 10^{-5}}{0.2-1.32 \times 10^{-5}}\right) \\
+4.88 = pK_a + \log(6.6 \times 10^{-5}) \\
+4.88 = pK_a - 4.18 \\
+pK_a = 4.88 + 4.18 \\
+pK_a = \boxed{9.06}
+\end{gather*}
 
 \section*{Lecture 2: Amino acids and peptides}
 
