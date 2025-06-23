@@ -29,7 +29,7 @@
 
 \usepackage[version=4]{mhchem}
 
-\title{Techniques in protein biochemistry}
+\title{Techniques in protein biochemistry and thermodynamics}
 \author{BIOS 10016}
 \date{23 June 2025}
 
@@ -49,8 +49,18 @@
 \begin{itemize}
 \item Size-exclusion chromatography
 \item Ion exchange chromatography
-\item Affinity Purification
+\item Affinity purification
 \end{itemize}
+\item \textbf{EXAM I ENDS HERE}
+\item Know all definitions
+\item Describe the first two laws of thermodynamics
+\item Assess if a reaction is endothermic, exothermic or isothermic
+\item Describe the standard state and biological standard state conditions
+\item Assess if and describe why a reaction is spontaneous or not
+\item Assess if the entropy of a system increases or decreases
+\item Differentiate between $\Delta$G$\degree$ and $\Delta$G$\degree$’
+\item Calculate the equilibrium constant from $\Delta$G$\degree$ and vice versa
+\item Calculate $\Delta$G from initial concentrations of substrates and products
 \end{itemize}
 
 \newpage
@@ -140,6 +150,165 @@ Test used to measure the enzymatic activity of a specific enzyme by directly det
 \item pH $<$ pI $\implies$ positive proteins
 \item More charges $\to$ higher affinity
 \item Once charged molecules are stuck to the resin, elution is done by changing pH or salt concentration in the buffer
+\item Four steps:
+\begin{itemize}
+\item Equilibration
+\item Sample application and wash
+\item Elution
+\item Regeneration
+\end{itemize}
+\end{itemize}
+
+\subsection*{Affinity purification}
+
+A \textbf{ligand} is used to isolate the protein (can be a substrate, inhibitor, or antibody that specifically binds to the target protein)
+
+Hexahistidine tag: HHHHH - N or C terminus
+
+binds \ce{Ni2+} or \ce{Co2+}
+
+\begin{enumerate}
+\item Column has \ce{Ni2+} and \ce{Co2+} attached. pH should be around 8.0 so that histidine is not positively charged.
+\item Wash the protein-bound column to get rid of undesired proteins
+\item Elute the protein by lowering the pH (protonating the histidine) or adding imidazole to disrupt electrostatic interaction
+\item Imidazole binds, protein comes off
+\end{enumerate}
+
+\vspace{5em}
+
+\begin{center}
+\large \textbf{End of Exam I}
+\end{center}
+
+\newpage
+
+\section*{Thermodynamics}
+
+\subsection*{Key terms}
+
+\begin{description}
+\item [energy] is the capacity to do work or to transfer heat
+\item [work] is organized motion that results in a specific physical change through the displacement or movement of an object
+\item [heat] is energy transferred as the result of a temperature difference
+\item [enthalpy (H)] total heat content of the system or surroundings
+\item [entropy] a measure of the number of microstates in a system or the surroundings
+\item [$\Delta$ (delta)] means ``change in''
+\item [Gibbs free energy (G)] a measure of spontaneity; $\Delta G = \Delta H - T \Delta S$
+\end{description}
+
+\subsection*{The laws of thermodynamics}
+
+\subsubsection*{First law}
+
+\textbf{Energy cannot be created nor destroyed, but it can be changed from one form to another}
+
+$$ \Delta H_\text{system} = - \Delta H_\text{surroundings} $$
+
+Enthalpy (H) is related to internal energy of the system (U). In biological systems, $\Delta H = \Delta U$
+
+\begin{description}
+\item [exothermic] system releases heat to the surroundings $\Delta H_\text{system} < 0$
+\item [endothermic] system absorbs heat from the surroundings $\Delta H_\text{system} > 0$
+\item [isothermic] no exchange of heat with the surroundings $\Delta H_\text{system} = 0$
+\end{description}
+
+\subsubsection*{Second law}
+
+\textbf{All spontaneous processes result in an overall increase of entropy in the universe}
+
+$$ \Delta S_\text{system} + \Delta S_\text{surroundings} > 0$$
+
+\textbf{Spontaneous} reactions occur automatically if left alone (no intervention required) and are energetically favourable
+
+$$\ce{C6H12O6_{(s)} + 6O2_{(g)}} \to \ce{6CO2_{(g)} + 6H2O_{(g)}} \quad \Delta H = -2800 \mathrm{kJ/mol}$$
+
+Entropy is a measure of \textbf{randomness}, and every spontaneous process results in a positive entropy change in the universe. How does this reaction result in increased entropy?
+
+\begin{enumerate}
+\item Number of molecules increases (from 7 to 12)
+\item Heat released
+\item Solid to gas
+\end{enumerate}
+
+\subsection*{How living systems counteract entropy}
+
+\begin{itemize}
+\item Living systems are very ordered!
+\item To live we must increase the disorder of the surroundings
+\item Ingest complex molecules and expel small molecules and heat
+\item Organisms with $\Delta S_\text{univ} = 0$ are dead
+\item THE SUN MAINTAINS ORDER! pop off queen
+\end{itemize}
+
+\subsection*{Describing spontaneous processes}
+
+\subsubsection*{Gibbs free energy}
+
+The entropic and enthalpic components of a reaction can be combined into a general description of spontaneity.
+
+\begin{equation}
+\Delta G_\text{system} = \Delta H - T \Delta S
+\end{equation}
+
+conceptually:
+
+$$ \text{free energy of the system} = \text{entropy of surroundings} - \text{temperature} \times \text{entropy of the system} $$
+
+\begin{description}
+\item [exergonic] spontaneous, negative $\Delta G$
+\item [endergonic] not spontaneous, positive $\Delta G$
+\item [equilibrium] at $\Delta G = 0$
+\end{description}
+
+Standard free energy change ($\Delta$G$\degree$) tells us the direction of a reaction at \textbf{standard state}:
+
+\begin{itemize}
+\item 1M initial concentration
+\item pressure = 1 atm
+\item temperature can vary, generally 0$\degree$C or 25$\degree$C
+\end{itemize}
+
+In biological systems, we make an exception for [\ce{H+}]
+
+\begin{itemize}
+\item [\ce{H+}] = 1M, meaning the pH is 0
+\item Under biological standard conditions, pH = 7, [\ce{H+}] = $1 \times 10^7$
+\item $\Delta$G$\degree$' = \textbf{biological standard free energy change}
+\end{itemize}
+
+\subsubsection*{Calculating the $\Delta G$ away from equilibrium}
+
+$$ \text{aA} + \text{bB} \rightleftharpoons \text{cC} + \text{dD} $$
+
+If $\Delta G < 0$, the forward reaction is spontaneous. \\
+If $\Delta G = 0$, the reaction is at equilibrium. \\
+If $\Delta G < 0$, the reverse reaction is spontaneous.
+
+Spontaneity depends on the reactant and product concentrations. You can change the temperature and concentration to favor certain reactions (forward and back reaction).
+
+\textbf{When doing problems with temperature, always convert into Kelvin! ($\degree$C + 273)}
+
+\subsection*{Enzymes}
+
+Combustion of glucose
+
+$$\ce{C6H12O6_{(s)} + 6O2_{(g)}} \to \ce{6CO2_{(g)} + 6H2O_{(g)}}$$
+
+\textbf{Activation barrier} must first be overcome before a reaction can happen (sugar will not be combusting on its own)
+
+Enzymes...
+
+\begin{itemize}
+\item are catalyst proteins (speed up a reaction)
+\item end in -ase
+\item catalyze 1000s of specific reactions in the human body
+\item will always return to original conformation
+\item accelerate reactions by lowering activation energy
+\item are low in concentration relative to the substrates
+\item bind substrates with high specificity
+\item are highly regulated by inhibitors or modifications
+\item do not change the K$_\text{eq}$ and $\Delta$G$\degree$ for the reaction; only affects the barrier
+\item function depends on protein structure
 \end{itemize}
 
 \end{document}
