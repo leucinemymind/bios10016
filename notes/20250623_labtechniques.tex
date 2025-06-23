@@ -1,0 +1,145 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{biblatex}
+\geometry{margin=1in}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{gensymb}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{cancel}
+\usepackage{nicefrac}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,        % Enable colored links
+    linkcolor=teal,         % Set color for internal links
+    citecolor=teal,         % Set color for citations
+    filecolor=teal,         % Set color for file links
+    urlcolor=teal           % Set color for URLs
+}
+
+\usepackage[version=4]{mhchem}
+
+\title{Techniques in protein biochemistry}
+\author{BIOS 10016}
+\date{23 June 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectives}
+
+\begin{itemize}
+\item Know all definitions
+\item Describe the importance of assays and differentiate between direct and indirect methods
+\item Calculate specific activity, percent yield and purification level
+\item Describe how assays and PAGE can be used to assess protein purity.
+\item Describe the principles of PAGE and SDS-PAGE
+\item Describe the theory, principles, conditions required and the results of the different purification procedures discussed:
+\begin{itemize}
+\item Size-exclusion chromatography
+\item Ion exchange chromatography
+\item Affinity Purification
+\end{itemize}
+\end{itemize}
+
+\newpage
+
+\section*{Laboratory techniques}
+
+\subsection*{Protein purification}
+Requires:
+
+\begin{itemize}
+\item A source (natural or genetically engineered)
+\item A method to assess purity (activity assays, gel-based)
+\end{itemize}
+
+\subsubsection*{Direct activity assay}
+
+Test used to measure the enzymatic activity of a specific enzyme by directly detecting the change in a substrate or the formation of a product as the reaction occurs.
+
+\begin{description}
+\item [activity] $\displaystyle \frac{\text{amount}}{\text{time}}$
+\item [standard enzyme activity, U] $\displaystyle \frac{\mu}{\text{min}}$
+\item [specific activity] $\displaystyle \frac{\text{enzyme activity (Units)}}{\text{mg of total protein}}$, a measure of purity (as mg of total protein decreases, activity increases, considering the amount of protein of interest remains the same)
+
+\item {Percent yield} (how much activity is left after performing a certain step relative to original sample):
+
+\begin{equation}
+\text{Percent yield} = \frac{\text{remaining total activity}}{\text{initial total activity}} \times 100\%
+\end{equation}
+
+\item {Purification level} (how much purer the sample is after a certain step relative to original sample):
+
+\begin{equation}
+\text{Purification level} = \frac{\text{specific activity}}{\text{initial specific activity}} \times 100\%
+\end{equation}
+
+\end{description}
+
+\subsubsection*{\textit{P}oly\textit{A}crylamide \textit{G}el \textit{E}lectrophoresis (PAGE)}
+
+\begin{itemize}
+
+\item Matrix is \textbf{polyacrylamide} that has holes and pores, changing how quickly the material can pass through in response to electric field. Bigger molecules move much slower
+\item Separates proteins based on \textbf{charge and size}
+\item \textbf{Cathode} (negative) attracts \textbf{positive} ions
+\item \textbf{Anode} (positive) attracts \textbf{negative} ions
+\item Proteins migrate towards electrode of opposite charge
+
+\end{itemize}
+
+\subsubsection*{\textit{S}odium \textit{D}odecyl \textit{S}ulfate-PAGE (SDS-PAGE)}
+
+\begin{itemize}
+\item SDS (negatively charged detergent) binds tightly to proteins (1.4 g SSDS/1 g protein)
+\item All proteins become very negatively charged and separation depends only on size
+\item 3$\degree$ and 4$\degree$ structure disrupted (denatured)
+\item Often reducing conditions used: 
+\begin{itemize}
+\item DTT
+\item $\beta$-Mercaptoethanol ($\beta$-ME)
+\end{itemize}
+\item $\implies$ disulfide bonds broken
+\item Protein mobility $\displaystyle \propto \frac{1}{\log \text{(molecular weight)}}$
+\item Smears indicate impurity; isolated proteins indicate purity
+\end{itemize}
+
+\subsection*{Chromatography}
+
+\subsubsection*{Gel filtration/Size exclusion column chromatography}
+
+\begin{itemize}
+\item Separated based on size
+\item Presence of a gel matrix with holes and gel beads attached
+\item Proteins elute (come out) in order of decreasing molecular weight, shown by a peak in the graph
+\item Larger molecules elute first (excluded from pores) because they interact less with the gel beads
+\item Smaller molecules elute later (enter pores) because they interact more with the gel beads
+\item Time of elution $\displaystyle \propto \frac{1}{\log \text{(molecular weight)}}$
+\end{itemize}
+
+\subsubsection*{Ion exchange chromatography}
+
+\paragraph{Anion exchange chromatography} The \textbf{resin} is \textbf{positively charged}, the \textbf{protein} to be isolated is \textbf{negatively charged}.
+
+\paragraph{Cation exchange chromatography} The \textbf{resin} is \textbf{negatively charged}, the \textbf{protein} to be isolated is \textbf{positively charged}.
+
+\begin{itemize}
+\item pH $>$ pI $\implies$ negative proteins
+\item pH $<$ pI $\implies$ positive proteins
+\item More charges $\to$ higher affinity
+\item Once charged molecules are stuck to the resin, elution is done by changing pH or salt concentration in the buffer
+\end{itemize}
+
+\end{document}
