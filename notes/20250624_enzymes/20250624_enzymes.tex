@@ -1,0 +1,282 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{biblatex}
+\geometry{margin=1in}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{gensymb}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{cancel}
+\usepackage{nicefrac}
+
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,        % Enable colored links
+  linkcolor=teal,         % Set color for internal links
+  citecolor=teal,         % Set color for citations
+  filecolor=teal,         % Set color for file links
+  urlcolor=teal           % Set color for URLs
+}
+
+\usepackage[version=4]{mhchem}
+
+\title{Enzyme kinetics}
+\author{BIOS 10016}
+\date{24 June 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectives}
+
+\begin{itemize}
+\item Describe the principles behind enzyme kinetics.
+\item Describe the criteria and assumptions required to analyze a system using Michaelis-Menten kinetics, and the parameters that are yielded.
+\item Prepare Michaelis-Menten and Lineweaver-Burk plots from raw data.
+\item Calculate elements of the Michaelis-Menten equation when provided sufficient information.
+\item Calculate the turnover number and specificity constant.
+\item Extract kinetic data from the Lineweaver-Burk plot.
+\item Describe the limits at which the turnover number and the specificity constant drive the reaction.
+\end{itemize}
+
+\newpage
+
+\section*{Enzymes}
+
+\subsection*{General properties of enzymes}
+
+\begin{itemize}
+\item Have high reaction rates (10$^6$ to 10$^{12}$ times faster than uncatalyzed reactions)
+\item Mild reaction conditions $$2\ce{N2_{(g)} + 6\ce{H2(g)} \to \ce{2NH3(g)}}$$
+\item Regulated activity
+\item Reaction specificity
+\begin{itemize}
+\item Absolute specificity: only one substrate (urease $\to$ urea)
+\item Relative specificity: few related substrates (e.g. hexokinase $\to$ glucose and fructose)
+\item Stereospecific specificity: only one isomer (D or L form)
+\end{itemize}
+\end{itemize}
+
+\subsection*{Active sites}
+Substrates bind using noncovalent interactions to \textbf{active sites}. Active sites are a unique microenvironment that binds the substrate and catalyzes the reaction.
+
+\textbf{Induced fit} = changing the shape of the enzyme to fit the substrate.
+
+Initial binding of the substrate to the active site depends on IMFs.
+
+\subsubsection*{Structural complementarity}
+
+\textbf{Geometric}: substrate and enzyme structures match structurally
+
+\textbf{Electronic}: substrate and enzyme structures match electronically (opposite charges)
+
+\textbf{Stereospecificity}: chiralities match
+
+\subsection*{Binding energy and transition states}
+
+or $\Delta$G$_B$
+
+The energy associated with substrate binding to the active site that pays for the entropy associated with binding.
+
+Energy comes from:
+
+\begin{enumerate}
+\item Enthalpy from IMFs
+\item Entropy of \ce{H2O}
+\item Entropy of the substrate
+\end{enumerate}
+
+Transition states may block spontaneous processes. The transition state is short-lived, high-energy, and determines reaction rate.
+
+To speed up: lower activation energy or increase $\Delta$G of S.
+
+\textbf{Transition state analogs} are excellent enzyme inhibitors. The molecules mimic a transition state and bind to the active site, preventing substrate binding.
+
+\textbf{Dissociation constant} - how tightly a substrate binds to a protein or enzyme. A smaller K$_D$ means stronger binding. (K$_i$ is K$_D$ for an inhibitor.)
+
+\subsection*{Arrhenius equation}
+
+\begin{equation}
+k = Ae^{-\frac{E_a}{RT}}
+\end{equation}
+
+where $k$ is the rate constant, $A$ is the pre-exponential factor, $E_a$ is the activation energy, $R$ is the gas constant, and $T$ is the temperature in Kelvin.
+
+\newpage
+
+\section*{Kinetics}
+
+\subsection*{Enzyme kinetics}
+
+Consider a first-order reaction: an enzyme E converts one substrate S into one product P.
+
+$$\text{S} \rightleftharpoons \text{P}$$
+
+rate = $\displaystyle \frac{d[P]}{dt} = \frac{-d[S]}{dt}$
+
+An enzyme is like a factory assembly line - rate of product formation depends on the time it takes to make a product (V$_{max}$, k$_{cat}$) and the time it takes for materials to arrive
+
+$$ \text{E + S} \rightleftharpoons \text{ES} \rightleftharpoons \text{EP} \to \text{E + P}$$
+
+$\text{E + S} \to \text{ES} $ = k$_1$ \\
+$\text{ES} \to \text{E + S} $ = k$_-1$ \\
+$\text{ES} \to \text{EP} $ = k$_2$ \\
+$\text{EP} \to \text{ES} $ = k$_-2$
+
+\subsection*{Dependence of reaction rate on [S]}
+
+The more substrate, the greater the chance for collisions
+
+rate = velocity = V $\propto$ [S]
+
+To study enzyme kinetics, study it far away from equilibrium
+
+v$_0$ = initial rate of reaction (initial velocities)
+
+\subsection*{Reaction order}
+
+The number of molecules that react in the rate determining step (slowest step)
+
+\begin{description}
+\item [first-order reaction] rate = k[S], rate $\propto$ [S]
+\item [zero-order reaction] reaction rate is not proportional to [S], observed when [S] $>>>$ [E] on the flat line
+
+rate = k$_{cat}$
+\item [second-order reaction] reaction rate $\propto$ [S]$_1$ and [S]$_2$
+
+$$ \text{pyruvate} + \ce{HCO3-} \to \text{oxaloacetate} $$
+
+rate = k[S]$_1$[S]$_2$
+
+\item [pseudo first-order reaction] reaction rate $\propto$ [S]$_1$ only (the independent substrate is present in excess amounts)
+
+$$ \text{pyruvate} + \ce{HCO3-} \: \text{(excess)} \to \text{oxaloacetate} $$
+
+rate = k[S]$_1$
+
+\end{description}
+
+\subsection*{Michaelis-Menten kinetics}
+
+\begin{itemize}
+\item Simplest, but very useful model
+\item Requires collection of initial velocity data
+\item Can be applied to study enzyme kinetics providing..
+\begin{itemize}
+\item 1st or pseudo 1st order
+\item hyperbolic
+\end{itemize}
+\item Based upon the reaction $\text{E + S} \rightleftharpoons \text{ES} \to \text{E + P}$ or $\text{binding} \rightleftharpoons \text{processing}$
+\item \textbf{Michaelis-Menten complex} = \textbf{K$_m$} = \textbf{enzyme-substrate complex} (ES)
+\item Looking only at initial velocities (no k$_-2$)
+\item Assumptions:
+\begin{itemize}
+\item Minimal amount of enzyme [E] $<<<$ [S]
+\item No product ($<$10\%) and the forward reaction predominates, V = V$_0$
+\item k$_{-1}$ $>>$ k$_2$ (ES $\to$ E + S is much faster than ES $\to$ E + P)
+\item Steady state condition ([ES] will not change)
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{The Michaelis-Menten equation}
+
+\begin{equation}
+v_0 = \frac{V_{max}\text{[S]}}{\text{[S]} + K_m}
+\end{equation}
+
+where:
+
+\begin{itemize}
+\item $v_0$ = initial velocity
+\item $V_{max}$ = maximum velocity, line approaches this value asymptotically
+\item $[$S$]$ = substrate concentration
+\item $K_m$ = Michaelis constant (the substrate concentration at which the reaction rate is half of $V_{max}$)
+\end{itemize}
+
+\subsubsection*{Extracting K$_m$ and V$_{max}$ values}
+Linear plots:
+
+\begin{itemize}
+\item \textbf{The Lineweaver-Burke Double Reciprocal Plot}
+\item Woolf-Hofstee Plot
+\item Hanes-Woolf Plot
+\item Eadie-Scatchrd Plot
+\end{itemize}
+
+Deriving the Lineweaver-Burk relationship:
+
+$$v_0 = \frac{V_{max}\text{[S]}}{\text{[S]} + K_m}$$
+$$ \frac{1}{v_0} = \frac{\text{[S]} + K_m}{V_{max}\text{[S]}} $$
+$$ \frac{1}{v_0} = \frac{K_m}{V_{max}} \left(\frac{1}{[S]}\right) + \frac{1}{V_{max}}$$
+
+Slope: $K_m$/$V_{max}$
+
+x-int: $\displaystyle \frac{-1}{K_m}$
+
+\subsubsection*{The Michaelis constant, K$_m$}
+
+$$ K_m = \frac{k_{-1} + k_2}{k_1} $$
+
+k$_2$ is negligible. Cancel and rearrange to get:
+
+$$ K_m = \frac{k_{-1}}{k_1} = \frac{\text{[E]}\text{[S]}}{\text{[ES]}} $$
+
+Units: M
+
+Small value = tighter binding (high affinity)
+
+Large value = weaker binding (low affinity) 
+
+The constant value depends on 
+
+\begin{itemize}
+\item enzyme type
+\item substrate
+\item reaction conditions (pH, temperature, ionic strength)
+\end{itemize}
+
+K$_m$ is an approximation of substrate affinity, provided k$_2$ $<<<$ k$_{-1}$.
+
+\subsubsection*{V$_{max}$}
+A value that depends on enzyme properties
+
+Has units: amount/time
+
+\subsubsection*{Turnover number, k$_{cat}$, k$_2$}
+
+$$k_{cat} = \frac{V_{max}}{[E]_T}$$
+
+units: s$^{-1}$
+
+\subsubsection*{The specificity constant}
+A useful term to describe enzyme-substrate systems
+
+Quantitative term to assess \textbf{catalytic efficiency} (how efficiently an enzyme econverts substrate to product
+
+Specificity constant = $\displaystyle \frac{k_{cat}}{K_m}$ (rate of processing/binding of S)
+
+Units: M$^{-1}$s$^{-1}$
+
+$$\frac{k_{cat}}{K_m} = \frac{\text{higher rate}}{\text{higher affinity}} = \frac{k_{cat} \: \text{is bigger}}{K_m \: \text{is smaller}}$$
+
+\subsubsection*{Dual nature of the Michaelis-Menten equation}
+
+Combination of 0-order and 1st-order kinetics
+
+The Michaelis Menten equation describes a hyperbolic dependence on [S]
+
+Low-substrate concentration: $\displaystyle v = \frac{k_{cat}}{K_m}$
+
+High-substrate concentration: $v = k_{cat}$
+
+\end{document}
