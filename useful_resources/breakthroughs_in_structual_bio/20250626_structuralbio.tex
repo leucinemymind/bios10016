@@ -1,0 +1,124 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{biblatex}
+\geometry{margin=1in}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{gensymb}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{cancel}
+\usepackage{nicefrac}
+
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,        % Enable colored links
+  linkcolor=teal,         % Set color for internal links
+  citecolor=teal,         % Set color for citations
+  filecolor=teal,         % Set color for file links
+  urlcolor=teal           % Set color for URLs
+}
+
+\usepackage[version=4]{mhchem}
+
+\title{History and recent breakthroughs in structural biology}
+\author{BIOS 10016}
+\date{26 June 2025}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Architecture vs. structural biology}
+
+\begin{itemize}
+\item Structural biology lets us go inside molecules and see how they are built so we can understand how life functions at the smallest scale
+\item You can't get any information about how the city functions out of looking at the names of buildings on a map - you have to go inside the buildings and see how they're built
+\item Structural similarities between buildings and molecules as part of a larger structure
+\item Architects study buildings; biologists study biomolecules
+\item Blueprint: architectural blueprint/bricks, beams, steel, concrete/DNA
+\item Building blocks: walls, floors, support beams/amino acids, nucleotides...
+\item Structural elements: alpha helices, beta sheets, domains...
+\item Methods: models and simulations/X-ray, cryo-EM, NMR...
+\item Structural failure: collapse, poor design/aggregation, diseases...
+\item Renovation/engineering: repurposing old buildings/protein engineering, drug design...
+\end{itemize}
+
+\subsection*{Studying the structure of molecules}
+\begin{itemize}
+\item First Nobel Prize in physics - Wilhelm Conrad Röntgen, 1901, discovered X-ray
+\item X-rays are electromagnetic waves with a higher frequency than visible light
+\item ``Seeing'' the structure: laser goes through a sieve at a scattering angle (diffraction pattern)
+\item Sieves can diffract lasers because they have very tiny meshes
+\item Diffraction patterns reveal underlying structures
+\item 1914: Max von Laue was awarded the Nobel Prize in Physics ``for his discovery of the diffraction of X-rays by crystals'' (mineral crystals, not protein crystals)
+\item 1915: Sir William Henry Bragg and William Lawrence Bragg (proposed the equation at 22, youngest Nobel Prize awarded to a scientist at only 25!) were awarded the Nobel Prize in Physics ``for their services to the analysis of crystal structure by means of X-rays'' (again, still minerals)
+\item Bragg's Law: $2d\sin\theta = \lambda$ (same pattern, but wavelengths of colors differ - red pattern appears larger than green)
+\end{itemize}
+
+\subsection*{X-ray crystallography}
+\begin{itemize}
+\item People noticed that proteins can be crystallized too! (e.g. haemoglobin crystals)
+\item In earlier days, X-ray crystallography focused on minerals and salts, not proteins
+\item Breakthrough by J.D. Bernal and Dorothy Crowfoot (Hodgkin) in 1934, who crystallized pepsin and determined its structure
+\item Bernal discovered that protein crystals must be kept hydrated to produce meaningful diffraction patterns
+\item When exposed to air, birefringence diminishes (crystal structure breaks)
+\end{itemize}
+
+\subsection*{Breakthrough on studying fiber structures}
+\begin{itemize}
+\item One-dimensional crystals (linear) e.g. $\alpha$-keratin, collagen
+\item Two-dimensional crystals (planar) e.g. silk fibroin, $\beta$-keratin
+\item Different diffraction patterns for different structures
+\item 1954: Linus Pauling was awarded the Nobel Prize in Chemistry ``for his research into the nature of the chemical bond and its application to the elucidation of the structure of complex substances''
+\item But he drew a \textit{left-handed $\alpha$ helix} (gasp)
+\item This was before people knew that $\alpha$ helices tended to show up in their right-handed form
+\item Photograph 51: diffraction of DNA by Rosalind Franklin, Francis Crick, and James Watson
+\item 1962: James Watson, Francis Crick, and Maurice Wilkins (Franklin's mentor) were awarded the Nobel Prize in Physiology or Medicine ``for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material''
+\item 1962: Max Perutz and John Cowdery Kendrew were awarded the Nobel Prize in Chemistry ``for their studies of the structures of globular proteins''
+\item 1964: Dorothy Crowfoot Hodgkin was awarded the Nobel Prize in Chemistry ``for her determinations by X-ray techniques of the structures of important biochemical substances'' (insulin!)
+\end{itemize}
+
+\subsection*{Using electrons as an alternative method to probe structure}
+\begin{itemize}
+\item 1906: The Nobel Prize in Physics was awarded to J. J. Thomson ``in recognition of the great merits of his theoretical and experimental investigations on the conduction of electricity by gases''
+\item 1929: The Nobel Prize in Physics was awarded to Louis de Broglie ``for his discovery of the wave nature of electrons''
+\item 1937: The Nobel Prize in Physics was awarded to Clinton Joseph Davisson and George Paget Thomson ``for their experimental discovery of the diffraction of electrons by crystals''
+\item 1986: The Nobel Prize in Physics was awarded to Ernst Ruska, Gerd Binnig, and Heinrich Rohrer ``for their design of the first electron microscope'' (Ruska) and ``for their design of the scanning tunneling microscope'' (Binnig and Rohrer)
+\item 1974: The Nobel Prize in Physiology or Medicine was awarded jointly to Albert Claude, Christian de Duve and George E. Palade ``for their discoveries concerning the structural and functional organization of the cell''
+\end{itemize}
+
+\subsubsection*{cryoEM}
+Freezing molecules, taking an electron micrograph, boxing out individual chaperone proteins, and averaging them to get 3D structure
+
+It took decades for cryoEM to reach the point where it could be used to determine the structure of proteins at high resolution
+
+2017: The Nobel Prize in Chemistry was awarded jointly to Jacques Dubochet, Joachim Frank, and Richard Henderson ``for developing cryo-electron microscopy for the high-resolution structure determination of biomolecules in solution''
+
+Easier determination of protein structure - ``resolution revolution of electron microscopy''!!
+
+\subsection*{Modern advancements}
+
+\begin{itemize}
+\item AlphaFold!!!!!!!!!!!
+\item Training data of high quality - algorithm is only as good as the training data
+\item 2024: The Nobel Prize in Chemistry was divided, one half awarded to David Baker ``for computational protein design'' and the other half jointy to Demis Hassabis and John Jumper ``for protein structure prediction''
+\item \textbf{What are the remaining challenges?}
+\begin{itemize}
+\item Structure determines function, but knowing the structure does not equal knowing the function.
+\item Structures are static, but molecules are moving!
+\item Intrinsically disordered protein (IDP)
+\item New methods need to be developed to see a molecular movie instead of static pictures
+\end{itemize}
+\item Molecular structures are not just cool - they're essential! They give us a powerful way to understand how life works at the deepest level, revealing how nature has shaped these molecules over millions of years to make us who we are.
+\end{itemize}
+
+\end{document}
