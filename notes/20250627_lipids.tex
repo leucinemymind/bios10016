@@ -1,0 +1,172 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{biblatex}
+\geometry{margin=1in}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{gensymb}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{cancel}
+\usepackage{nicefrac}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,        % Enable colored links
+    linkcolor=teal,         % Set color for internal links
+    citecolor=teal,         % Set color for citations
+    filecolor=teal,         % Set color for file links
+    urlcolor=teal           % Set color for URLs
+}
+
+\usepackage[version=4]{mhchem}
+
+\title{Lipids and membranes}
+\author{BIOS 1006}
+\date{27 Jun 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectives}
+
+\begin{itemize}
+\item Know all definitions.
+\item Describe the roles played by lipids.
+\item Describe micelle and bilayer structures.
+\item Describe the forces that stabilize lipid structures.
+\item Predict the relative melting points of fatty acids and the lipids in which they are found.
+\item Draw a fatty acid given a name or designation: (e.g. trans-18:1$^{\Delta 9}$ or 18:1$\omega$9) and name fatty acids if given a structure.
+\item Describe the essential and non-essential designations.
+\item Recognize a triacylglycerol or phospholipid given the names, structures or designations of the components.
+\item Describe the relationship between lipid fluidity and melting point.
+\item  If given a list of fatty acids or lipids, rank the melting points.
+\item  Describe the biological roles, the chemical reactions and the physical and structural properties of each lipid class.
+\item  Determine the class of a lipid if given a structure.
+\item Determine the class of isoprenoids, and locate isoprene units in molecules.
+\end{itemize}
+
+\newpage
+
+\section*{Lipids}
+Are water-insoluble molecules that are highly soluble in organic solvents. They are defined by their solubility (in organic solvents, not water)
+
+\subsection*{Roles of lipids}
+
+\begin{itemize}
+\item Structure (membranes)
+\item Energy storage (fats, oils)
+\item Protection (antioxidants, water-proofing)
+\item Pigments (carotenoids)
+\item Coenzymes (vitamins, heme)
+\item Signaling (hormones, growth factors)
+\end{itemize}
+
+\subsubsection*{Lipids do not form covalent polymers!}
+Recall:
+
+\begin{itemize}
+\item proteins are covalent polymers of amino acids
+\item nucleic acids are covalent polymers of nucleotides
+\item polysaccharides are covalent polymers of sugars
+\end{itemize}
+
+Lipids also form higher order structures, but the esubunits are not covalently attached. These structures are micelles and bilayers (membranes) that are maintained by IMFs such as LDFs (non-polar parts), hydrogen bonds, dipole-dipole forces, and ion-dipole forces (between lipids and \ce{H2O}).
+
+\subsection*{Classes and nomenclature of lipids}
+
+\begin{itemize}
+\item Free fatty acids
+\item Triacylglycerols
+\item Phospholipids
+\item Glycolipids
+\item Isoprenoids
+\end{itemize}
+
+\subsubsection*{Fatty acids}
+Monocarboxylic acids composed of a long hydrocarbon chain with a carboxyl group at the end
+
+\begin{itemize}
+\item Even number of carbon atoms
+\item Generally unbranched chain (straight chain)
+\item Hydrophilic and hydrophobic ends (amphipathic)
+\item Varying degrees of saturation
+\item Produced by organisms and synthesized from Acetyl-CoA
+\item Plants make all the fatty acids they need
+\item We only produce some fatty acids, the rest must be obtained from our diet (essential fatty acids)
+\item Essential: in your diet
+\item Non-essential: can be synthesized by your body (doesn't mean not important!)
+\item We need to consume \textbf{essential fatty acids} (omega-6, omega-3)
+\item Think of the numbering scheme from the $\omega$-carbon
+\item Saturated fatty acids are flexible (free rotation aroudn C-C bonds)
+\item Linear conformation ist he most stable due to steric constraints
+\item Chains pack tightly against each other and form more rigid, organized aggregates (i.e. membranes)
+\item London Force Strength is proportional to surface area, depends on length and proximity
+\end{itemize}
+
+\begin{description}
+\item [saturated fatty acids] 0 double bonds
+\item [monounsaturated fatty acids] 1 double bond
+\item [polyunsaturated fatty acids] 2 or more double bonds
+\end{description}
+
+Double bonds can result in one of two orientations. (cis (favored)/trans)
+
+\subsubsection*{Saturated fatty acid nomenclature} 
+
+\begin{itemize}
+\item 18 carbon saturated fatty acid: 18:0 (carbons:double bonds)
+\item IUPAC: Octadecanoate (protonated: octadecanoic acid)
+\item Common: Stearate (protonated: stearic acid)
+\end{itemize}
+
+14:0 \textbf{tetra}\underline{deca}noic acid (tetra = 4, deca = 10) \\
+16:0 hexadecanoic acid \\
+18:0 octadecanoic acid \\
+20:0 \textbf{eicosanoic} acid \\
+22:0 \textbf{do}\underline{cos}anoic acid (do = 2, cos = 22)\\
+24:0 tetracosanoic acid \\
+26:0 hexacosanoic acid
+
+\subsubsection*{Monounsaturated fatty acid nomenclature}
+
+18 carbon cis monounsaturated fatty acid with a double bond \textbf{starting} at position 11
+
+\begin{itemize}
+\item Full IUPAC name: cis $\Delta^{11}$-octadecene/-oic acid
+\item IUPAC shorthand: 18:1$^{\Delta 11}$
+\item 18:1 $\omega$ 7 (counting backwards)
+\end{itemize}
+
+\subsubsection*{Polyunsaturated fatty acid nomenclature}
+
+18 carbon cis monounsaturated fatty acid with 2 double bonds \textbf{starting} at positions 9 and 12
+\begin{itemize}
+\item Full IUPAC name: cis-cis- $\Delta^{9}$, $\Delta^{12}$-octadecadienoic acid (dien = 2 double bonds)
+\item IUPAC shorthand: 18:1$^{\Delta 9, \Delta 12}$
+\item 18:2 $\omega$ 6 (from the first double bond counting backwards. assuming all are cis and any other double bond is 3 carbons away)
+\end{itemize}
+
+\subsection*{Lipid properties}
+
+\subsubsection*{Fluidity}
+The higher the melting point, the lower the fluidity (this is why butter is solid and olive oil is liquid)
+
+Also depends on chain length. Longer chains have...
+
+\begin{itemize}
+\item Greater surface area
+\item Stronger London Forces
+\item Increased melting point
+\end{itemize}
+
+\end{document}
