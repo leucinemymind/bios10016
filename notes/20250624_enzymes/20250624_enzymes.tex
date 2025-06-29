@@ -42,9 +42,17 @@
 \begin{itemize}
 \item Describe the principles behind enzyme kinetics.
 \item Describe the criteria and assumptions required to analyze a system using Michaelis-Menten kinetics, and the parameters that are yielded.
+\begin{itemize}
+\item Assumptions: [ES] remains relatively constant
+\item First order at low concentrations, zero order at high concentrations
+\end{itemize}
 \item Prepare Michaelis-Menten and Lineweaver-Burk plots from raw data.
-\item Calculate elements of the Michaelis-Menten equation when provided sufficient information.
-\item Calculate the turnover number and specificity constant.
+\begin{itemize}
+\item Michaelis-Menten: asymptote at $V_\text{max}$, $K_\text{m}$ is the x-value at 1/2 of $V_\text{max}$
+\item Lineweaver-Burk: x-intercept at -1/$K_m$, y-intercept at 1/$V_{max}$
+\end{itemize}
+\item Calculate elements of the Michaelis-Menten equation when provided sufficient information. (See \ref{eq:mm})
+\item Calculate the turnover number and specificity constant. ($k_{cat}/K_m$)
 \item Extract kinetic data from the Lineweaver-Burk plot.
 \item Describe the limits at which the turnover number and the specificity constant drive the reaction.
 \end{itemize}
@@ -190,7 +198,7 @@ rate = k[S]$_1$
 
 \subsubsection*{The Michaelis-Menten equation}
 
-\begin{equation}
+\begin{equation} \label{eq:mm}
 v_0 = \frac{V_{max}\text{[S]}}{\text{[S]} + K_m}
 \end{equation}
 
