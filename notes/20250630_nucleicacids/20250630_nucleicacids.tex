@@ -1,0 +1,305 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{textcomp}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{biblatex}
+\geometry{margin=1in}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{gensymb}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{cancel}
+\usepackage{nicefrac}
+
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,        % Enable colored links
+  linkcolor=teal,         % Set color for internal links
+  citecolor=teal,         % Set color for citations
+  filecolor=teal,         % Set color for file links
+  urlcolor=teal           % Set color for URLs
+}
+
+\usepackage[version=4]{mhchem}
+
+\title{Nucleic acids}
+\author{BIOS 10016}
+\date{30 Jun 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectives}
+
+\begin{itemize}
+\item Know all definitions associated with nucleic acids.
+\item Draw and name the nucleosides, nucleotides and Watson-Crick base pairs associated with DNA and RNA.
+\item Know the numbering schemes for the components of nucleotides.
+\item Describe and explain the absorbance properties of nitrogenous bases.
+\item Describe the chemical and structural similarities and differences between DNA and RNA.
+\item Use Chargaff’s rules to predict the composition of DNA molecules.
+\item Describe the different double helical structures that DNA and RNA can adopt.
+\item Write out the complementary strand based upon Watson-Crick base pairing.
+\item Predict the stability of double stranded DNA sequences.
+\item Identify major and minor grooves in B-DNA.
+\item Describe how proteins interact with DNA, and why the major groove is often bound.
+\item Describe the features/forces that stabilize nucleic acid structure.
+\item Describe the phenomenon and role of supercoils, and the supercoil forms that exist.
+\item Describe the higher order structures that DNA adopts in cells.
+\item Describe the roles of messenger, transfer, ribosomal and other non-coding RNAs.
+\item Describe the features and exceptions to the central Dogma.
+\item Describe the concepts behind DNA replication:
+\begin{itemize}
+\item what is the meaning of semi-conservative?
+\item the stages involved in the process
+\item main protein players in prokaryotic and eukaryotic systems and
+the roles that they play in the process
+\item mechanism by which nucleotides are added to growing strand
+\end{itemize}
+\end{itemize}
+
+\newpage
+
+\section*{Nucleic acids, RNA, DNA}
+
+\subsection*{The building blocks of nucleic acids}
+
+\subsubsection*{Nucleotides}
+Nitrogenous bases with pentose sugar ($\beta$-D-ribofuranose or $\beta$-D-2'\footnote{The ' is added to differentiate between the sugar carbon numbering and the nucleotide numbering.}-deoxyribofuranose) with one or more phosphate groups ($\alpha$, $\beta$, $\gamma$). Nitrogenous bases can be \textbf{purines} with two rings, 4 nitrogens (adenine, guanine) or \textbf{pyrimidines} with one ring (cytosine, uracil, thymine). Nitrogenous bases are heterocycles, aromatic, and flat and absorb UV light (260 nm).
+
+\subsubsection*{Nucleosides}
+Nitrogenous bases with pentose sugar (ribose or deoxyribose) with no phosphate groups.
+
+\subsubsection*{Numbering positions on nitrogenous bases}
+\textbf{Pyrimidines}: start with the nitrogen where the sugar is attached, count in a circle toward the next nitrogen.
+
+\textbf{Purines}: start with the position opposite the sugar nitrogen, then jump to the next closest nitrogen.
+
+\subsubsection*{Nitrogenous base pairings}
+adenine $\to$ thymine (in DNA), 2 hydrogen bonds \\
+guanine $\to$ cytosine, 3 hydrogen bonds \\
+adenine $\to$ uracil (in RNA), 2 hydrogen bonds
+
+\subsubsection*{Nucleotide nomenclature}
+
+\begin{table}[H]
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Nitrogenous base} & \textbf{Ribose nucleoside} & \textbf{Within a nucleic acid} \\\hline
+Adenine & Adenosine & Adenylate \\\hline
+Guanine & Guanosine & Guanylate \\\hline
+Cytosine & Cytidine & Cytidylate \\\hline
+Uracil & Uridine & Uridylate \\\hline
+Thymine & Thymidine & Thymidylate \\\hline
+\end{tabular}
+\end{table}
+
+\subsection*{Structure of DNA}
+
+\subsubsection*{Nucleic acid orientation}
+\begin{itemize}
+\item Linear or circular, depending on organism
+\item DNA - deoxyribonucleotide polymer: dAMP, dCMP, dGMP and TMP
+\item Linked by phosphodiester bonds between the 5' phosphate of one nucleotide and the 3' hydroxyl of the next (3' $\to$ 5' linkage)
+\item RNA - ribonucleotide polymer: AMP, CMP, GMP and UMP
+\item Conventionally, named and drawn in the 5' to 3' direction (example: 5' ATGC 3')
+\item Double helix structure of B-DNA was published in 1953 by James Watson and Francis Crick (but it was all because of Rosalind Franklin's X-ray diffraction data!)
+\item Nobel prize in 1962 along with Maurice Wilkins
+\item \textbf{Anti-parallel, right-handed helix}
+\item Two grooves: major (wider, deeper) and minor (shallower, smaller)
+\item 10.5 base pairs per turn
+\item Watson-Crick base pairing (cytosine to guanine, thymine or uracil to adenine)
+\end{itemize}
+
+\subsubsection*{Chargaff's rule for double-stranded DNA}
+\%C = \%G and \%A = \%T. G to C is more stable because of 3 hydrogen bonds
+
+\subsubsection*{Base pair stacking}
+\begin{itemize}
+\item Base pairs stack on each other like books on a shelf
+\item \textbf{Stabilized by London interactions between pi orbitals} ($\pi$-$\pi$ interaction)
+\item Edges of bases define grooves
+\end{itemize}
+
+\subsubsection*{DNA conformations}
+B-DNA ist he most common form adopted, but other forms exist:
+\begin{itemize}
+\item A-DNA (dehydrated B-DNA)
+\begin{itemize}
+\item Right-handed helix
+\item Observed in RNA, dehydrated DNA, and DNA-RNA hybrid structures
+\item 11 base pairs per turn
+\item Pitch: 25.3 Å
+\end{itemize}
+\item Z-DNA
+\begin{itemize}
+\item Zigzag conformation
+\item Left-handed helix
+\item Common for alternating purine/pyrimidine sequences
+\item Arises from \textbf{torsional strain} imposed by supercoiling
+\item 12 base pairs per turn
+\item Pitch: 45.6 Å
+\end{itemize}
+\end{itemize}
+
+\subsection*{Amino acid interactions}
+\begin{itemize}
+\item Positively charged amino acids (R, H, K) form salt bridges with \ce{PO4-}, elevating protein pI
+\item Amino acid residues ``read'' the DNA sequence by recognising H-bond acceptors (A) and donors (D) in the major groove
+\begin{itemize}
+\item Adenine: \ce{-NH2}, \ce{N7}
+\item Thymine: \ce{O4}
+\item Guanine: \ce{O6}, \ce{N7}
+\item Cytosine: \ce{-NH2}
+\end{itemize}
+\end{itemize}
+
+\subsection*{Structure stability}
+
+\begin{itemize}
+\item Hydrogen bonds within base pairs
+\item Hydration (phosphate group and ribose OH are hydrophilic)
+\item Ionic (phosphate backbone is rich in negative charges, high energy state that can be stabilized by Mg)
+\item Hydrophobic interactions and base stacking (bases are aromatic - hydrophobic, London force interactions between $\pi$-$\pi$ orbitals result in stacking)
+\end{itemize}
+
+\subsection*{Supercoiling of DNA}
+
+\begin{itemize}
+\item Positive and negative supercoiling
+\item Imposed strain causes supercoiling
+\item Results from attempted unwinding of DNA
+\item Energy is stored in the supercoil as torque
+\item A right-handed coil
+\item The energy helps in the separation of the strands for transcription and replication of DNA
+\end{itemize}
+
+\subsubsection*{Positive supercoiling}
+Results from overwinding, a left-handed supercoil
+
+\subsubsection*{Negative supercoiling}
+Results from underwinding, a right-handed supercoil
+
+\subsection*{Higher order structures of DNA}
+
+\begin{itemize}
+\item \textbf{Nucleosomes}: a complex between DNA and histone proteins
+\item ``Beads on a string'' structure
+\item Positively charged amino acids needed on histone proteins
+\end{itemize}
+
+\subsection*{RNA - Ribonucleic acids}
+\begin{itemize}
+\item A versatile molecule:
+\begin{itemize}
+\item Protein synthesis
+\item Structural roles
+\item Catalytic roles
+\end{itemize}
+\item Differs from DNA:
+\begin{itemize}
+\item Ribose sugar instead of deoxyribose
+\item Uracil nitrogenous base replaces thymine
+\item Predominantly exists in single-stranded form
+\item Adjacent bases adopt 2$\degree$ structures: harpins, A-form helices, internal loops, stem loops
+\item Adopts 3$\degree$ and 4$\degree$ structures, very protein-like
+\item Structures are also stabilized by unique base pairs/triplets
+\end{itemize}
+\item Modification of bases is common
+\end{itemize}
+
+\subsubsection*{Types of RNA}
+\begin{description}
+\item [messenger RNA, mRNA] carries genetic information from DNA through to protein synthesis
+\item [transfer RNA, tRNA] molecules transport amino acids to the ribosomes for polypeptide assembly (15\% of cellular RNA)
+\item [ribosomal RNA, rRNA] the functional component oand the framework for the ribosome
+\item [ribozyme, catalytic RNA] formation of peptide bonds, associated proteins only play structural roles
+\end{description}
+
+\subsection*{Processes involving DNA}
+
+\subsubsection*{Central Dogma of genetic information transfer}
+
+\textbf{DNA transcripted into RNA translated into proteins (and DNA can replicate itself)}
+
+\begin{itemize}
+\item The traditional central dogma is overly simplified since information also flows in the other direction
+\begin{itemize}
+\item Proteins are involved in regulation
+\item RNA molecules involved at all steps
+\item Viruses have RNA genomes
+\item \textbf{RNA world}: the hypothesis that RNA was the first self-replicating molecule
+\item Like proteins, RNA molecules can perform many functional roles
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{DNA replication}
+
+\begin{itemize}
+\item Process by which DNA is duplicated
+\item Similar in all organisms
+\item \textbf{Semi-conservative}: new DNA molecules contain one parent and one daughter strand (original strand separates into 2, old strand + new strand)
+\end{itemize}
+
+\textbf{Steps:}
+
+\begin{enumerate}
+\item Initiation:
+\begin{itemize}
+\item Helicase (important to rip strands apart)
+\item Single-stranded DNA binding proteins
+\item Primase (allows recognition by polymerase, laying the foundation)
+\end{itemize}
+\item Elongation
+\begin{itemize}
+\item Polymerases
+\item Topoisomerases (release supercoiling so processes continue)
+\end{itemize}
+\item Termination
+\begin{itemize}
+\item Ligase
+\item Telomerase
+\item Tus protein
+\end{itemize}
+\end{enumerate}
+
+\subsubsection*{DNA replication sites}
+\begin{itemize}
+\item In prokaryotes: 1 site: oriC
+\item In eukaryotes: multiple origin sites
+\item Recognised by helicases that destabilise the double-stranded DNA duplex, requires ATP (energy)
+\item Very energy-intensive process
+\item Leads to the formation of \textbf{replication bubbles} from origins of replication
+\item \textbf{Single-stranded DNA binding (SSB) proteins} stabilize single stranded DNA state
+\item \textbf{Primase} ``primes'' the open DNA for replication
+\item Recognises the exposed bases in the replication fork
+\item Synthesises a short primer sequence on the DNA template (RNA in prokaryotes, RNA-DNA in eukaryotes)
+\end{itemize}
+
+\subsubsection*{DNA polymerase}
+\begin{itemize}
+\item Main polymerases: DNA polymerase III (prokayreotes) and DNA polymerases $\delta$ and $\varepsilon$ (eukaryotes)
+\item Large multi-enzyme complex
+\item Recognises the RNA-DNA duplex in the replication bubble
+\item Highly processive, not released until completed replication of DNA
+\item $\beta$-sliding clamp (encircles DNA and enhances processivity)
+\item Requires \ce{Mg2+}, DNA template, primers with a free 3' OH group, and deoxyNTPs (dATP, dCTP, dGTP and TTP)
+\end{itemize}
+
+\subsubsection*{5' to 3' synthesis of DNA}
+\begin{itemize}
+\item DNA template read in the 3' $\to$ 5' direction
+\item Parental DNA opens
+\item 5' is the leading strand (continuous), 3' is the lagging strand (discontinuous, happens in \textbf{Okazaki fragments})
+\item DNA made read in the 5' $\to$ 3' direction
+\end{itemize}
+
+\end{document}
